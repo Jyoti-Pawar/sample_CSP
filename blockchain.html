@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>CSP</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/edua-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css">
+    <link rel="stylesheet" type="text/css" href="css/settings.css">
+    <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+
+    <link rel="icon" href="images/csp_logo_favicon.png">
+    <style>
+        .tparrows {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a> -->
+    <!--Loader-->
+    <div class="loader">
+        <div class="bouncybox">
+            <div class="bouncy"></div>
+        </div>
+    </div>
+
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
+            <!-- <div class="container"> -->
+            <div class="header">
+                <div class="navbar-header">
+                        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                              </button> -->
+                    <a class="navbar-brand" href="#">
+                        <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;"
+                            class="logo logo-display">
+                        <img src="images/IBM_ICE.jpg" style="width: 180px !important;" class="logo logo-scrolled"
+                            alt="Logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOut">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="certificate.html">IBM Global Certificatation Program</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specializations</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="artificial.html">Artificial Intelligence</a></li>
+                                <li><a href="blockchain.html">Blockchain</a></li>
+                                <li><a href="BA.html">Business Analytics</a></li>
+                                <li><a href="cybersecu.html">Cyber Security</a></li>
+                                <li><a href="datascience.html">Data Science</a></li>
+                                <li><a href="iot.html">Internet of Things</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Registration</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="navbar-fixed-top main-menu-continer menutop">
+            <button type="button" class="btn menubar-toggle styl" onmouseover="openNav()">
+                <!-- <i class="fa fa-bars"></i> -->Menu
+            </button>
+
+            <div id="mySidenav" class="sidenav displaynone">
+                <ul>
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li>
+                        <a href="index.html"><img src="images/sidebar/home.ico"
+                                style="height:30px!important;padding-right: inherit;" />Home</a></li>
+                    <hr>
+                    <li>
+                        <a href="certificate.html"><img src="images/sidebar/certificate.ico"
+                                style="height:30px!important;padding-right: inherit;" />IBM Global Certificate</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <button class="dropdown-btn"><a><img src="images/sidebar/courses.ico"
+                                    style="height:30px!important;padding-right: inherit;" />Specialization<i
+                                    class="fa fa-caret-down"
+                                    style="padding-left: 4px;font-size: large;"></i></a></button>
+                        <ul class="dropdown-container">
+                            <li> <a href="artificial.html"><i class="fa fa-search"
+                                        style="padding-right: 12px;"></i>Artificial
+                                    Intelligence</a></li>
+                            <li><a href="blockchain.html"><i class="fa fa-search"
+                                        style="padding-right: 12px;"></i>Blockchain</a></li>
+                            <li><a href="BA.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Business
+                                    Analytics</a></li>
+                            <li><a href="cybersecu.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Cyber
+                                    Security</a></li>
+                            <li><a href="datascience.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Data
+                                    Science</a></li>
+                            <li><a href="iot.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Internet of
+                                    Things</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#"><img src="images/sidebar/reg.ico"
+                                style="height:30px!important;padding-right: inherit;" />Registration</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="contact.html"><img src="images/sidebar/contact.ico"
+                                style="height:30px!important;padding-right: inherit;" />Contact</a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Slider-->
+    <section class="rev_slider_wrapper text-center">
+        <!-- START REVOLUTION SLIDER 5.0 auto mode -->
+        <div id="rev_slider" class="rev_slider" data-version="5.0">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-transition="fade">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/BC_banner.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgparallax="10" class="rev-slidebg">
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
+                        data-hoffset="['0','0','0','0']" data-y="['326','270','270','150']"
+                        data-voffset="['0','0','0','0']" data-responsive_offset="on"
+                        data-visibility="['on','on','on','on']" data-transform_idle="o:1;"
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                        data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="800">
+                        <!-- <h1>Artificial Intelligence</h1> -->
+                    </div>
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
+                        data-hoffset="['0','0','0','0']" data-y="['380','340','300','350']"
+                        data-voffset="['0','0','0','0']" data-responsive_offset="on"
+                        data-visibility="['on','on','off','off']" data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;"
+                        data-transform_out="opacity:0;s:1000;s:1000;" data-start="1500">
+                        <!-- <p>Skill for better livelihood and stronger economy.</p> -->
+                    </div>
+                    <div class="tp-caption  tp-resizeme" data-x="['center','center','center','center']"
+                        data-hoffset="['0','0','0','0']" data-y="['450','390','350','250']"
+                        data-voffset="['0','0','0','0']" data-responsive_offset="on"
+                        data-visibility="['on','on','on','on']" data-transform_idle="o:1;"
+                        data-transform_in="y:[-200%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+                        data-start="2000">
+                    </div>
+                </li>
+            </ul>
+        </div><!-- END REVOLUTION SLIDER -->
+    </section><br>
+
+
+    <!--About course-->
+    <section id="ai" class="bottom25">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading bottom25">Blockchain<span class="divider-left"></span></h2>
+                    <p class="half_space text-justify">Blockchain is an evolving technology that can drastically
+                        progress banking, supply chain, and other transaction networks and can generate new openings for
+                        modernization. Businesses comprise many instances of networks of individuals and organizations
+                        that team up to create value and wealth. These networks work together in markets that exchange
+                        assets in the form of goods and services between the participants. Blockchain technology offers
+                        the foundation for an active shared ledger that can be useful to save time when recording
+                        transactions between parties, remove costs associated with intermediaries, and reduce risks of
+                        fraud and tampering.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About-->
+
+    <!-- Video -->
+    <!-- <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="wrap">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                            <!-- <iframe width="100%" height="315" src="video/Block_chain.mp4"></iframe> -->
+                            <!-- <h1>Blockchain</h1> -->
+                            <!-- <iframe src="https://player.vimeo.com/video/55806355" width="100%" height="360" frameborder="0"
+								webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> --
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="padding bottom25" style="padding-bottom: 0px;">
+        <div class="container">
+            <h2 class="heading bottom25">Market Trends and Predictions<span class="divider-left"></span></h2>
+            <div class="row">
+                <div class="col-md-5">
+                    <p class="half_space text-justify padding">The global blockchain market size is expected to grow
+                        from USD
+                        1.2 billion in 2018 to USD 23.3 billion by 2023, at a Compound Annual Growth Rate (CAGR) of
+                        80.2% during the forecast period.
+                    </p><br>
+                    <h4 class="siz">Salary Trends</h4>
+                    <p class="text-justify">The hike in this sector for the current year is projected at around 8-10%<p>
+                            <ul class="ulpad">
+                                <li>Globally average salary is $80k per annum</li>
+                                <li>Average salary in India is ₹80lpa across all skill sets
+                                </li>
+                            </ul>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="images/blockchain/market-graph.jpg" alt="graph">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="heading bottom25">Why Learn Blockchain?<span class="divider-left"></span></h3>
+                        <p class="half_space text-justify">Blockchain technology is growing rapidly and its impact is very
+                            high on the industries. There is a huge demand for blockchain professional from private and
+                            public sectors.
+                        </p>
+                    </div>
+                </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="heading bottom25">Global Skill Gap<span class="divider-left"></span></h3>
+                    <p class="text-justify">
+                        IBM and Mastercard have already filed more than 80 patents each for blockchain-related
+                        technology, and companies are struggling to find sufficient talent to develop their initiatives.
+                        Since January 2017, the demand for blockchain engineering talent has grown 700 percent, and 40
+                        percent of the fully managed software development projects requested in the last month require
+                        blockchain skills. ComputerWorld highlighted the extent of this demand in May earlier this year
+                        citing a Q1 2018 Upwork report that detailed how blockchain developer freelancing grew at a
+                        year-over-year rate of 6,000 percent. Further, a study by SAP in March determined that 92
+                        percent of
+                        business leaders surveyed viewed blockchain as an opportunity, with Supply Chain & IoT one of
+                        the leading practical applications.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="images/AIML/skill_gap.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom25">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" alt="skill" src="images/AIML/skills.jpg">
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="item" style="padding-top: 7px;">
+                        <h4 class="siz">Job Roles</h4>
+                        <ul class="ulpad">
+                            <li>Backend Developer</li>
+                            <li>Blockchain System Architect</li>
+                            <li>Blockchain Software Engineer</li>
+                            <li>Blockchain Web Designer</li>
+                            <li>Blockchain Quality Engineer</li>
+                            <li>Blockchain Legal Consultant</li>
+                            <li>Blockchain Solution Architect</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4 class="siz">Skills Required</h4>
+                        <ul class="ulpad">
+                            <li>Cryptography</li>
+                            <li>Programming</li>
+                            <li>Distributed Ledger – concepts</li>
+                            <li>Data Analysis</li>
+                            <li>Cryptocurrency</li>
+                            <li>Networking</li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="col-md-6">
+                        <center><h2 class="heading bottom25 top30">Skills Required<span class="divider-left"></span></h2></center>
+                    <div class="col-md-4">
+                        <div style="background-color: #08aea4;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                            <center>
+                                <h4 style="color: white;">Programming</h4>
+                            </center>
+                        </div><br>
+                        <div style="background-color: #037b96;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                            <center>
+                                <h4 style="color: white;">Probability and Statistics</h4>
+                            </center>
+                        </div>    <br>                    
+                    
+                    <div style="background-color: #354075;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                            <center>
+                                <h4 style="color: white;">Data Modelling & Evaluation</h4>
+                            </center>
+                        </div><br>
+                    </div>
+                    <div class="col-md-4">
+                            <div style="background-color: #08aea4;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                <center>
+                                    <h4 style="color: white;">Programming</h4>
+                                </center>
+                            </div><br>
+                            <div style="background-color: #037b96;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                <center>
+                                    <h4 style="color: white;">Probability and Statistics</h4>
+                                </center>
+                            </div>    <br>                    
+                        
+                        <div style="background-color: #354075;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                <center>
+                                    <h4 style="color: white;">Data Modelling & Evaluation</h4>
+                                </center>
+                            </div><br>
+                        </div>
+                        <div class="col-md-4">
+                                <div style="background-color: #08aea4;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                    <center>
+                                        <h4 style="color: white;">Programming</h4>
+                                    </center>
+                                </div><br>
+                                <div style="background-color: #037b96;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                    <center>
+                                        <h4 style="color: white;">Probability and Statistics</h4>
+                                    </center>
+                                </div>    <br>                    
+                            
+                            <div style="background-color: #354075;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                    <center>
+                                        <h4 style="color: white;">Data Modelling & Evaluation</h4>
+                                    </center>
+                                </div><br>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom25">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                            <center><h2 class="heading bottom25 top30">Skills Required<span class="divider-left"></span></h2></center>
+                        <div class="col-md-4">
+                            <div style="background-color: #08aea4;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                <center>
+                                    <h4 style="color: white;">Programming</h4>
+                                </center>
+                            </div><br>
+                            <div style="background-color: #037b96;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                <center>
+                                    <h4 style="color: white;">Probability and Statistics</h4>
+                                </center>
+                            </div>    <br>                    
+                        
+                        <div style="background-color: #354075;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                <center>
+                                    <h4 style="color: white;">Data Modelling & Evaluation</h4>
+                                </center>
+                            </div><br>
+                        </div>
+                        <div class="col-md-4">
+                                <div style="background-color: #08aea4;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                    <center>
+                                        <h4 style="color: white;">Programming</h4>
+                                    </center>
+                                </div><br>
+                                <div style="background-color: #037b96;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                    <center>
+                                        <h4 style="color: white;">Probability and Statistics</h4>
+                                    </center>
+                                </div>    <br>                    
+                            
+                            <div style="background-color: #354075;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                    <center>
+                                        <h4 style="color: white;">Data Modelling & Evaluation</h4>
+                                    </center>
+                                </div><br>
+                            </div>
+                            <div class="col-md-4">
+                                    <div style="background-color: #08aea4;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                        <center>
+                                            <h4 style="color: white;">Programming</h4>
+                                        </center>
+                                    </div><br>
+                                    <div style="background-color: #037b96;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                        <center>
+                                            <h4 style="color: white;">Probability and Statistics</h4>
+                                        </center>
+                                    </div>    <br>                    
+                                
+                                <div style="background-color: #354075;border-radius: 20px;padding: 15px 15px 15px 15px;">
+                                        <center>
+                                            <h4 style="color: white;">Data Modelling & Evaluation</h4>
+                                        </center>
+                                    </div><br>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-responsive" alt="skill" src="images/AIML/skills.jpg">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- <section id="companies">
+        <div class="container">
+            <h2 class="heading">Companies Hiring<span class="divider-left"></span></h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <center><img class="img-responsive" src="images/blockchain/companies.PNG" alt="company"></center>
+                </div>
+            </div>
+        </div>
+    </section><br> -->
+
+    <section id="ai" class="bottom25">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading bottom25">Blockchain Overview<span class="divider-left"></span></h2>
+                    <p class="half_space text-justify">This course provides an overview on the blockchain, the
+                        technologies involved in blockchain, the components of blockchain and its advantages. It helps
+                        to gain knowledge on building the blockchain application using Hyperledger which includes
+                        composer framework model, composer API’s etc. It also helps to develop application in several
+                        industries such as banking, finance, healthcare is also presented here.
+                    </p>
+                </div>
+            </div><br>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="bottom25">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading heading_space bottom25">Subjects<span class="divider-left"></span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6 res">
+                        <div class="item active">
+                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/blockchain/BCS1.png"
+                                    class="img-responsive">
+                                <h4 class="bottom15"><strong>Introduction to blockchain</strong></h4>
+                                <p class="bottom15 text-justify">This subject provides an overview of blockchain, the
+                                    concept of blockchain technology and its benefits to business. It provides an
+                                    overview of blockchain origin, objectives, and
+                                    challenges, slowly progressing to bitcoin data structures. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/blockchain/BCS2.jpg"
+                                    class="img-responsive">
+                                <h4 class="bottom15"><strong>Blockchain applications using hyperledger</strong></h4>
+                                <p class="bottom15 text-justify">This subject provides an overview on how to develop
+                                    hyper-ledger blockchain applications using composer framework model, develop front
+                                    end (client) applications using composer API.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/blockchain/BCS3.jpg"
+                                    class="img-responsive">
+                                <h4 class="bottom15"><strong>Industry application development using blockchain</strong>
+                                </h4>
+                                <p class="bottom15 text-justify">This subject introduce the blockchain with industry
+                                    applications such as Education, Finance, Healthcare, IoT, Insurance,
+                                    Retail, Government, Supply chain and others.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Courses -->
+
+    <!-- skill development -->
+    <section class="bottom25">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                        <h2 class="heading heading_space bottom25">IBM Unique Skill Development Ecosystem<span
+                                class="divider-left"></span>
+                        </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="images/IBM_ICE_skills.png" alt="skills">
+                </div>
+            </div><br>
+        </div>
+    </section>
+
+    <section class="bottom25">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="heading bottom25">Blockchain Outcome<span class="divider-left"></span></h2>
+                        <p class="half_space text-justify">This course provides an overview on the blockchain, the
+                            technologies involved in blockchain, the components of blockchain and its advantages. 
+                    </div>
+                </div><br>
+            </div>
+        </section>
+
+
+    <!--login modal-->
+    <div class="container">
+        <div class="modal fade" id="login" role="dialog" style="padding-right:0px;">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header headerColor">
+                        <button type="button" class="close modalClose" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="color: white;">Sign-in</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row text-center">
+                            <div class="col-md-12" style="text-align: center;">
+                                <a href="http://knowbots.phemesoft.com/" target="_blank" data-placement="bottom"
+                                    title="Click to login">
+                                    <img src="images/knowbots_logo.png" alt="Knowbots" class="logo">
+                                </a>
+                            </div>
+                            <!-- <div class="col-md-6" style="text-align: center;">
+                                    <a href="http://www.phemesoft.com/" target="_blank" data-placement="bottom"
+                                        title="Click to login">
+                                        <img src="images/CATIA-logo.png" alt="CATIA" class="logo ">
+                                    </a>
+                                </div> -->
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-basic" data-dismiss="modal">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- register float -->
+    <!-- <button class="open-button"><a  href="http://localhost/csp/register.php">Click to Register</a></button> -->
+    <button class="top-right">
+            <a href="">Register here</a>
+           </button>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>All rights reserved &copy; IBM India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER ends-->
+
+
+    <script src="js/jquery-2.2.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootsnav.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery-countTo.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/jquery.themepunch.tools.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/revolution.extension.navigation.min.js"></script>
+    <script src="js/revolution.extension.parallax.min.js"></script>
+    <script src="js/revolution.extension.slideanims.min.js"></script>
+    <script src="js/revolution.extension.video.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/functions.js"></script>
+
+    <script>
+        // var revapi;
+        // revapi = jQuery("#rev_slider").revolution({
+        //     gridwidth: [1170, 960, 750, 480],
+        //     gridheight: [480, 600, 500, 390],
+        // });
+
+        // navbar icon
+        document.getElementById("mySidenav").onmouseover = function() {openNav()};
+        document.getElementById("mySidenav").onmouseout = function() {closeNav()};
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
+
+        //  dropdown
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+        // video
+
+        /*Floating Code for Iframe Start*/
+        if (jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"],iframe[src*="https://player.vimeo.com/"]').length > 0) {
+            /*Wrap (all code inside div) all vedio code inside div*/
+            jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').wrap("<div class='iframe-parent-class'></div>");
+            /*main code of each (particular) vedio*/
+            jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').each(function (index) {
+
+                /*Floating js Start*/
+                var windows = jQuery(window);
+                var iframeWrap = jQuery(this).parent();
+                var iframe = jQuery(this);
+                var iframeHeight = iframe.outerHeight();
+                var iframeElement = iframe.get(0);
+                windows.on('scroll', function () {
+                    var windowScrollTop = windows.scrollTop();
+                    var iframeBottom = iframeHeight + iframeWrap.offset().top;
+                    //alert(iframeBottom);
+
+                    if ((windowScrollTop > iframeBottom)) {
+                        iframeWrap.height(iframeHeight);
+                        iframe.addClass('stuck');
+                        jQuery(".scrolldown").css({ "display": "none" });
+                    } else {
+                        iframeWrap.height('auto');
+                        iframe.removeClass('stuck');
+                    }
+                });
+                /*Floating js End*/
+            });
+        }
+    </script>
+
+</body>
+
+</html>
