@@ -23,6 +23,9 @@
         .tparrows {
             display: none !important;
         }
+        /* body {
+            font-size: 20px;
+        } */
     </style>
 </head>
 
@@ -37,7 +40,7 @@
 
     <!--Header-->
     <header>
-        <nav class="navbar navbar-default navbar-fixed no-background bootsnav">
+        <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
             <!-- <div class="container"> -->
         <div class="header">
                 <div class="navbar-header">
@@ -74,12 +77,12 @@
             </div>
         </nav>
 
-        <!-- <div class="navbar-fixed-top main-menu-continer menutop">
+        <div class="navbar-fixed-top main-menu-continer menutop">
             <button type="button" class="btn menubar-toggle styl" onmouseover="openNav()">
-                <!-- <i class="fa fa-bars"></i> --Menu
+                <!-- <i class="fa fa-bars"></i> -->Menu
             </button>
 
-            <div id="mySidenav" class="sidenav">
+            <div id="mySidenav" class="sidenav displaynone">
                 <ul>
                     <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
                     <li>
@@ -88,16 +91,16 @@
                     <hr>
                     <li>
                         <a href="certificate.html"><img src="images/sidebar/certificate.ico"
-                                style="height:30px!important;padding-right: inherit;" />IBM Global Certificate</a>
+                                style="height:30px!important;padding-right: inherit;" />IBM Global Certification Program</a>
                     </li>
                     <hr>
                     <li>
                         <button class="dropdown-btn"><a><img src="images/sidebar/courses.ico"
-                                    style="height:30px!important;padding-right: inherit;" />Specialization<i
+                                    style="height:30px!important;padding-right: inherit;" />Specializations<i
                                     class="fa fa-caret-down"
                                     style="padding-left: 4px;font-size: large;"></i></a></button>
                         <ul class="dropdown-container">
-                            <li> <a href="artificial.html"><i class="fa fa-search"
+                            <li> <a href="aiml.html"><i class="fa fa-search"
                                         style="padding-right: 12px;"></i>Artificial
                                     Intelligence</a></li>
                             <li><a href="blockchain.html"><i class="fa fa-search"
@@ -126,7 +129,7 @@
                     <hr>
                 </ul>
             </div>
-        </div> -->
+        </div>
     </header>
 
     <!--Slider-->
@@ -139,33 +142,6 @@
                     <!-- MAIN IMAGE -->
                     <img src="images/contact.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
                         data-bgparallax="10" class="rev-slidebg">
-                    <!-- LAYER NR. 1 -->
-                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['326','270','270','150']"
-                        data-voffset="['0','0','0','0']" data-responsive_offset="on"
-                        data-visibility="['on','on','on','on']" data-transform_idle="o:1;"
-                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                        data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="800">
-                        <!-- <h1>Artificial Intelligence</h1> -->
-                    </div>
-                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['380','340','300','350']"
-                        data-voffset="['0','0','0','0']" data-responsive_offset="on"
-                        data-visibility="['on','on','off','off']" data-transform_idle="o:1;"
-                        data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;"
-                        data-transform_out="opacity:0;s:1000;s:1000;" data-start="1500">
-                        <!-- <p>Skill for better livelihood and stronger economy.</p> -->
-                    </div>
-                    <div class="tp-caption  tp-resizeme" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['450','390','350','250']"
-                        data-voffset="['0','0','0','0']" data-responsive_offset="on"
-                        data-visibility="['on','on','on','on']" data-transform_idle="o:1;"
-                        data-transform_in="y:[-200%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
-                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
-                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;"
-                        data-start="2000">
-                    </div>
                 </li>
             </ul>
         </div><!-- END REVOLUTION SLIDER -->
@@ -285,7 +261,8 @@
         // });
 
          // navbar icon
-
+         document.getElementById("mySidenav").onmouseover = function () { openNav() };
+        document.getElementById("mySidenav").onmouseout = function () { closeNav() };
     function openNav() {
       document.getElementById("mySidenav").style.display = "block";
     }
