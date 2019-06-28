@@ -115,6 +115,9 @@ p{
 .top25{
 	margin-top:25px;
 }
+.top45{
+	margin-top: 45px;
+}
 .top30{ margin-top:30px;}
 .margin_tophalf{
 	margin-top:45px;
@@ -1409,7 +1412,8 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 	}
 } */
 .design{
-	padding: 4px;
+	/* padding: 4px; */
+	padding: 5px;
 	color: #00abbd;
 }
 a:hover{
@@ -1766,8 +1770,9 @@ p.scrolldown {
     position: fixed;
 	/* align-items: center; */
 	border-radius: 16px;
-    top: 250px;
-    right: 0px;
+    /* top: 250px; */
+	top: 352px;
+	right: 0px;
 	transform: rotate(90deg);
 	border: none;
     /* transform: rotate(90deg) scaleX(-1); */
@@ -1775,7 +1780,7 @@ p.scrolldown {
 	background: #3B5998;
 	color: white;
 	opacity: 0.8;
-    font-size: 20px;
+    font-size: 18px;
     padding: 4px 15px;
 }
 .content{
@@ -1789,7 +1794,7 @@ p.scrolldown {
 	position: absolute;
 	bottom: 20px;
 	/* right: 20px; */
-	right: 280px;
+	right: 160px;
 	/* background-color: black; */
 	color: white;
 	/* background-color: #c9bbbb;
@@ -1810,4 +1815,56 @@ p.scrolldown {
     padding: 10px 15px;
     margin-bottom: 20px;
     font-size: 15px;
+}
+/* navbar background style */
+.navback{
+	margin-top: 26px;
+	background-color: #3B5998;
+	opacity: 0.8; color: #fff;
+	border: none;
+	border-radius: 5px;
+	height: 35px;
+	/* width: 65px; */
+}
+
+/* skills and jobs buttons */
+.lightgreen{
+	background-color: #08aea4;
+	border-radius: 20px;
+	padding: 15px 15px 15px 15px;
+}
+.darkgreen{
+	background-color: #037b96;
+	border-radius: 20px;
+	padding: 15px 15px 15px 15px;
+}
+.blue{
+	background-color: #354075;
+	border-radius: 20px;
+	padding: 15px 15px 15px 15px;
+}
+
+/* container padding */
+.containerpad{
+	padding: 22px;
+}
+.topM{
+	margin-top: 65px;
+}
+.liback1{
+	background-color: #3f3b81;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    color: white;
+    padding-left: 25px;
+}
+.liback2{
+	background-color: #add6fa;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    padding-left: 25px;
+}
+/* section color */
+.secgrey{
+	background-color: #f1f3ff;
 }
