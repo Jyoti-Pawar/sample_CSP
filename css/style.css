@@ -1884,3 +1884,9 @@ p.scrolldown {
 	height: 100%;
 	border: 2px solid #ffb600;
 }
+
+/* horizontal line */
+.horizontal{
+	border: 2px solid #ffb600 !important;
+	margin-top: 0px !important;
+}
