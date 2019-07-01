@@ -1891,3 +1891,9 @@ p.scrolldown {
 .imgW{
 	width: 50%;
 }
+
+/* homepage ul */
+.ulstyle{
+	margin-left: 10px;
+	list-style: disc !important;
+}
