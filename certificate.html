@@ -23,13 +23,14 @@
         .tparrows {
             display: none !important;
         }
+
         body {
             font-size: 16px;
         }
     </style>
 </head>
 
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
     <!-- <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a> -->
     <!--Loader-->
     <div class="loader">
@@ -44,9 +45,9 @@
             <!-- <div class="container"> -->
             <div class="header">
                 <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                                <i class="fa fa-bars"></i>
-                              </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
                     <a class="navbar-brand" href="#">
                         <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;"
                             class="logo logo-display">
@@ -96,7 +97,8 @@
                         <hr> -->
                     <li>
                         <a href="certificate.html"><img src="images/sidebar/certificate.ico"
-                                style="height:30px!important;padding-right: inherit;" />IBM Global Certification Program</a>
+                                style="height:30px!important;padding-right: inherit;" />IBM Global Certification
+                            Program</a>
                     </li>
                     <hr>
                     <li>
@@ -105,8 +107,7 @@
                                     class="fa fa-caret-down"
                                     style="padding-left: 4px;font-size: large;"></i></a></button>
                         <ul class="dropdown-container">
-                            <li> <a href="aiml.html"><i class="fa fa-search"
-                                        style="padding-right: 12px;"></i>Artificial
+                            <li> <a href="aiml.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Artificial
                                     Intelligence</a></li>
                             <li><a href="blockchain.html"><i class="fa fa-search"
                                         style="padding-right: 12px;"></i>Blockchain</a></li>
@@ -183,62 +184,74 @@
     <!-- Courses -->
     <section class="">
         <div class="containerpad">
-                <div class="row">
-                        <div class="col-md-12">
-                            <center><div class="col-md-6 res">
-                                <div class="item active">
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <img class="img-responsive" src="images/certificate/certificate_1.png" alt="certificate">
-                                        <h4 class="bottom15"><strong>Artificial Intelligence/Machine Learning</strong></h4>
-                                       
-                                    </div>
-                                </div>
-        
-                                <div class="item">
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <img class="img-responsive" src="images/certificate/certificate_1.png" alt="certificate">
-                                        <h4 class="bottom15"><strong>Blockchain</strong></h4>
-                                        
-                                    </div>
-                                </div>
-        
-                                <div class="item">
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <img class="img-responsive" src="images/certificate/certificate_2.png" alt="certificate">
-                                        <h4 class="bottom15"><strong>Business Analytics</strong></h4>
-                                    </div>
-                                </div>
-                            </div></center>
-                        </div><hr style="border: 1px solid #dadada !important;"><br>
             <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <div class="col-md-6 res">
+                            <div class="item active">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <a href="aiml.html">
+                                         <img class="img-responsive"
+                                            src="images/certificate/certificate_1.png" alt="certificate"></a>
+                                    <h4 class="bottom15"><strong>Artificial Intelligence/Machine Learning</strong></h4>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <a href="blockchain.html"><img class="img-responsive"
+                                            src="images/certificate/certificate_1.png" alt="certificate"></a>
+                                    <h4 class="bottom15"><strong>Blockchain</strong></h4>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <a href="BA.html"> <img class="img-responsive"
+                                            src="images/certificate/certificate_2.png" alt="certificate"></a>
+                                    <h4 class="bottom15"><strong>Business Analytics</strong></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <hr style="border: 1px solid #dadada !important;"><br>
+                <div class="row">
                     <div class="col-md-12">
-                            <center><div class="col-md-6 res">
+                        <center>
+                            <div class="col-md-6 res">
                                 <div class="item active">
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <img class="img-responsive" src="images/certificate/certificate_3.png" alt="certificate">
+                                        <a href="cybersecu.html"> <img class="img-responsive"
+                                                src="images/certificate/certificate_3.png" alt="certificate"></a>
                                         <h4 class="bottom15"><strong>Cyber Security</strong></h4>
-                                       
+
                                     </div>
                                 </div>
-        
+
                                 <div class="item">
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <img class="img-responsive" src="images/certificate/certificate_4.png" alt="certificate">
+                                        <a href="datascience.html"> <img class="img-responsive"
+                                                src="images/certificate/certificate_4.png" alt="certificate"></a>
                                         <h4 class="bottom15"><strong>Data Analytics</strong></h4>
-                                        
+
                                     </div>
                                 </div>
-        
+
                                 <div class="item">
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <img class="img-responsive" src="images/certificate/certificate_5.png" alt="certificate">
+                                        <a href="iot.html"> <img class="img-responsive"
+                                                src="images/certificate/certificate_5.png" alt="certificate"></a>
                                         <h4 class="bottom15"><strong>Internet of Things</strong></h4>
                                     </div>
                                 </div>
-                            </div></center>
-                        </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
             </div>
-        </div>
     </section><br>
     <!-- Courses -->
 
@@ -278,9 +291,9 @@
 
     <!-- register float -->
     <!-- <button class="open-button"><a  href="http://localhost/csp/register.php">Click to Register</a></button> -->
-    <button class="top-right"> 
-                    <a href="">Register here</a>   
-                         </button>
+    <button class="top-right">
+        <a href="">Register here</a>
+    </button>
 
     <!--FOOTER-->
     <footer>
@@ -323,8 +336,8 @@
         // });
 
         // navbar icon
-        document.getElementById("mySidenav").onmouseover = function() {openNav()};
-        document.getElementById("mySidenav").onmouseout = function() {closeNav()};
+        document.getElementById("mySidenav").onmouseover = function () { openNav() };
+        document.getElementById("mySidenav").onmouseout = function () { closeNav() };
         function openNav() {
             document.getElementById("mySidenav").style.display = "block";
         }

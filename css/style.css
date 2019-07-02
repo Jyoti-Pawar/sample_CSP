@@ -1790,19 +1790,12 @@ p.scrolldown {
 	display: none;
 }
 
+/* form */
 .text-block {
 	position: absolute;
 	bottom: 20px;
-	/* right: 20px; */
 	right: 160px;
-	/* background-color: black; */
 	color: white;
-	/* background-color: #c9bbbb;
-    opacity: 0.8;
-    height: max-content; */
-	/* padding-left: 20px;
-	opacity: 0.8;
-	padding-right: 20px; */
 	top: 150px;
   }
   input[type="text"],input[type="number"],input[type="email"]{
@@ -1815,6 +1808,12 @@ p.scrolldown {
     padding: 10px 15px;
     margin-bottom: 20px;
     font-size: 15px;
+}
+
+@media screen and (max-width:320px),(max-width:376px),(max-width:426px),(max-width:768px){
+	.mobile{
+		display: none;
+	}
 }
 /* navbar background style */
 .navback{
@@ -1901,3 +1900,4 @@ p.scrolldown {
 	margin-left: 10px;
 	list-style: disc !important;
 }
+

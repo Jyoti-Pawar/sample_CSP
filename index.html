@@ -31,7 +31,8 @@
   </style>
 </head>
 
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  <!-- <body> -->
   <!-- <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a> -->
   <!--Loader-->
   <div class="loader">
@@ -113,6 +114,14 @@
           <ul class="nav navbar-nav navbar-right" data-in="fadeInDown">
             <!-- <li><button class="navback"><a href="index.html">Home</a></button></li> -->
             <li><a href="index.html">Home</a></li>
+            <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#aboutibm">About IBM</a></li>
+                  <li><a href="#">About ASAP</a></li>
+                  <li><a href="#">IBM and ASAP</a></li>
+                </ul>
+              </li> -->
             <li><a href="certificate.html">IBM Global Certificatation Program</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specializations</a>
@@ -144,7 +153,7 @@
         <li data-transition="fade" data-delay="2000">
           <img id="banner1" src="images/banner/banner3.jpg" alt="banner" data-bgposition="center center"
             data-bgfit="cover" data-bgparallax="10" class="rev-slidebg">
-          <div class="text-block">
+          <div class="text-block mobile">
             <form>
               <div class="row">
                 <div class="col-md-12" style="background-color: #ffb600;
@@ -168,7 +177,7 @@
         <li data-transition="fade" data-delay="2000">
           <img src="images/banner/banner7.jpg" alt="banner" data-bgposition="center center" data-bgfit="cover"
             data-bgparallax="10" class="rev-slidebg">
-          <div class="">
+          <div class="mobile">
             <form>
               <div class="row text-block">
                 <div class="col-md-12" style="background-color: #ffb600;
@@ -191,6 +200,7 @@
         <li data-transition="fade" data-delay="2000">
           <img src="images/banner/banner5.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
             data-bgparallax="10" class="rev-slidebg">
+            <div class="mobile">
           <form>
             <div class="text-block">
               <div class="row">
@@ -210,6 +220,7 @@
               </div>
             </div>
           </form>
+        </div>
         </li>
         <!-- <li data-transition="fade" data-delay="2000">
             <img src="images/banner/portrait-of-schoolgirl-standing-with-books-in-UDH3MZX.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10"
@@ -300,12 +311,14 @@
   <div class="">
     <!--ABout US-->
     <section id="ibm">
+        <!-- <a href="javascript:void(0);" class="close-button"></a> -->
       <div class="containerpad">
         <div class="row">
           <div class="col-md-6">
             <div class="wrap">
               <iframe width="100%" autoplay="true" height="350"
                 src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <!-- <button type="button" onclick="closevideo()">&times;</button> -->
               <!-- <iframe width="100%" height="315" src="video/Block_chain.mp4"></iframe> -->
               <!-- <h1>Blockchain</h1> -->
               <!-- <iframe src="https://player.vimeo.com/video/55806355" width="100%" height="360" frameborder="0"
