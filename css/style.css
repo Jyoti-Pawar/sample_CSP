@@ -1875,13 +1875,17 @@ p.scrolldown {
 	border-right: 2px solid #ffb600 !important;
 	height: 330px;
 }
-/* .vl1{
-	border-right: 2px solid #ffb600 !important;
-	height: 300px;
-} */
+
 .Specivl{
 	border-right: 2px solid #ffb600 !important;
 	height: 206px;
+}
+
+@media screen and (max-width:320px),(max-width:376px),(max-width:426px),(max-width:768px){
+	.Specivl{
+		border-right: none !important;
+		height: 280px;
+	}
 }
 
 /* horizontal line */
@@ -1900,4 +1904,9 @@ p.scrolldown {
 	margin-left: 10px;
 	list-style: disc !important;
 }
-
+/* form background */
+.formback{
+	background-color: #ffb600;
+	opacity: 0.8;padding: 20px;
+	border-radius: 10px;
+}
