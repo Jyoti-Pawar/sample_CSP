@@ -1810,9 +1810,12 @@ p.scrolldown {
     font-size: 15px;
 }
 
-@media screen and (max-width:320px),(max-width:376px),(max-width:426px),(max-width:768px){
+@media screen and (max-width:320px),(max-width:376px),(max-width:426px){
 	.mobile{
 		display: none;
+	}
+	#responsivedown{
+		display: block !important;
 	}
 }
 /* navbar background style */
