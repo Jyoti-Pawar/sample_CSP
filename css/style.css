@@ -1798,7 +1798,7 @@ p.scrolldown {
 	color: white;
 	top: 150px;
   }
-  input[type="text"],input[type="number"],input[type="email"]{
+  input[type="text"],input[type="number"],input[type="date"]{
 	/* width: 50%; */
 	/* width: 160%; */
     border: none;
