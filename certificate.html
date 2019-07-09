@@ -71,7 +71,7 @@
                                 <li><a href="iot.html">Internet of Things</a></li>
                             </ul>
                         </li>
-                        <li><a href="http://13.233.225.233/csp">Registration</a></li>
+                        <li><a href="http://13.233.225.233">Registration</a></li>
                         <li><a href="contact.html">Help Desk</a></li>
                         <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li>
                     </ul>
@@ -124,7 +124,7 @@
                     </li>
                     <hr>
                     <li>
-                        <a href="http://13.233.225.233/csp"><img src="images/sidebar/reg.ico"
+                        <a href="http://13.233.225.233"><img src="images/sidebar/reg.ico"
                                 style="height:30px!important;padding-right: inherit;" />Registration</a>
                     </li>
                     <hr>
@@ -265,8 +265,8 @@
                         <h4 class="modal-title" style="color: white;">Sign-in</h4>
                     </div>
                     <div class="modal-body">
-                        <div class="row text-center">
-                            <div class="col-md-12" style="text-align: center;">
+                        <div class="row text-center">                            
+                        <div class="col-md-12" style="text-align: center;">
                                 <a href="http://knowbots.phemesoft.com/" target="_blank" data-placement="bottom"
                                     title="Click to login">
                                     <img src="images/knowbots_logo.png" alt="Knowbots" class="logo">
@@ -289,40 +289,45 @@
     </div>
     <!-- modal end -->
 
-    <div class="modal fade" id="regi" role="dialog" style="padding-right:0px;">
-        <div class="modal-dialog modal-sm">
+<div class="container">
+    <div class="modal fade" id="regi" role="dialog">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header headerColor">
                     <button type="button" class="close modalClose" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title" style="color: white;">Regester Here</h4>
                 </div>
-                <div class="modal-body">
-                    <div class="row text-center">
-                        <div class="col-md-12" style="text-align: center;">
-                            <a href="http://knowbots.phemesoft.com/" target="_blank" data-placement="bottom"
-                                title="Click to login">
-                                <img src="images/knowbots_logo.png" alt="Knowbots" class="logo">
-                            </a>
-                        </div>
-                        <!-- <div class="col-md-6" style="text-align: center;">
-                                <a href="http://www.phemesoft.com/" target="_blank" data-placement="bottom"
-                                    title="Click to login">
-                                    <img src="images/CATIA-logo.png" alt="CATIA" class="logo ">
-                                </a>
-                            </div> -->
-                    </div>
+                <div class="modal-body">                     
+                            <form>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <h3 class="heading bottom20" style="color: black;">Register Here<span class="divider-center"></span>
+                                        </h3>
+                                        <div class="form-group">
+                                          <input type="text" class="form-control" name="fname" placeholder="Name">
+                                          <input type="date" class="form-control" name="date" placeholder="Date of birth">
+                                          <input type="number" class="form-control" name="contact" placeholder="Contact number">
+                                          <!-- <input type="text" class="form-control" name="course" placeholder="Course name"> -->
+                                          <button class="btn btn-primary">Register Now!!</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
                 </div>
                 <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Register now</button>
                     <button type="button" class="btn btn-basic" data-dismiss="modal">Cancel</a>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <!-- register float -->
     <!-- <button class="open-button"><a  href="http://localhost/csp/register.php">Click to Register</a></button> -->
     <button class="top-right">
-        <a href="http://13.233.225.233/csp">Register here</a>
+        <a href="http://13.233.225.233">Register here</a>
+        <!-- <a data-target="#regi" data-toggle="modal">Register here</a> -->
     </button>
 
     <!--FOOTER-->
