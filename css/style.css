@@ -566,7 +566,8 @@ nav.navbar.bootsnav .navbar-brand{
   display: inline-block;
   height: auto;
   margin-left: 0;
-  padding:20px  0;
+  padding: 8px 0px !important;
+  /* padding:20px  0; */
 }
 nav.navbar.bootsnav .navbar-brand, nav.navbar.bootsnav.navbar-fixed.no-background .navbar-brand{
   padding:20px  0;
@@ -1798,7 +1799,7 @@ p.scrolldown {
 	color: white;
 	top: 150px;
   }
-  input[type="text"],input[type="number"],input[type="date"]{
+  input[type="text"],input[type="email"],input[type="date"]{
 	/* width: 50%; */
 	/* width: 160%; */
     border: none;
@@ -1833,22 +1834,39 @@ p.scrolldown {
 /* skills and jobs buttons */
 .lightgreen{
 	background-color: #08aea4;
-	border-radius: 20px;
-	padding: 15px 15px 15px 15px;
+	border-radius: 10px;
+	/* border-radius: 20px; */
+	/* padding: 15px 15px 15px 15px; */
+	padding: 10px 10px;
 }
 .darkgreen{
 	background-color: #037b96;
-	border-radius: 20px;
-	padding: 15px 15px 15px 15px;
+	border-radius: 10px;
+	/* border-radius: 20px; */
+	/* padding: 15px 15px 15px 15px; */
+	padding: 10px 10px;
 }
 .blue{
 	background-color: #354075;
-	border-radius: 20px;
-	padding: 15px 15px 15px 15px;
+	border-radius: 10px;
+	/* border-radius: 20px; */
+	/* padding: 15px 15px 15px 15px; */
+	padding: 10px 10px;
+}
+.green{
+	background-color: #1eb074;
+	border-radius: 10px;
+	/* border-radius: 20px; */
+	/* padding: 15px 15px 15px 15px; */
+	padding: 10px 10px;
 }
 
 /* container padding */
 .containerpad{
+	/* padding: 22px; */
+	padding: 40px 40px;
+}
+.containerhome{
 	padding: 22px;
 }
 .topM{

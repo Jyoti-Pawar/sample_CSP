@@ -41,12 +41,9 @@
     </div>
   </div>
 
-
-
-  <div class="navbar-fixed-top main-menu-continer menutop">
+<!-- <div class="navbar-fixed-top main-menu-continer menutop">
     <button type="button" class="btn menubar-toggle styl" onmouseover="openNav()">
-      <!-- <i class="fa fa-bars"></i>  onmouseout="closeNav()" -->Menu
-    </button>
+      Menu   </button>
 
     <div id="mySidenav" class="sidenav displaynone">
       <ul>
@@ -55,10 +52,6 @@
           <a href="index.html"><img src="images/sidebar/home.ico"
               style="height:30px!important;padding-right: inherit;" />Home</a></li>
         <hr>
-        <!-- <li>
-                <a href="index1.html"><img src="images/sidebar/home.ico"
-                    style="height:30px!important;padding-right: inherit;" />Home2</a></li>
-              <hr> -->
         <li>
           <a href="certificate.html"><img src="images/sidebar/certificate.ico"
               style="height:30px!important;padding-right: inherit;" />IBM Global Certification Program</a>
@@ -94,24 +87,25 @@
         <hr>
       </ul>
     </div>
-  </div>
+  </div> -->
 
   <!-- <div id="main"> -->
   <!--Header-->
   <header>
-    <nav class="navbar navbar-default navbar-fixed no-background bootsnav">
+    <nav class="navbar navbar-default navbar-fixed bootsnav">
+        <!-- <nav class="navbar navbar-default navbar-fixed no-background bootsnav"> -->
       <div class="header">
         <div class="navbar-header">
-          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
             <i class="fa fa-bars"></i>
-          </button> -->
+          </button>
           <a class="navbar-brand" href="#">
-            <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;" class="logo logo-display">
-            <img src="images/IBM_ICE.jpg" style="width: 180px !important;" class="logo logo-scrolled" alt="Logo">
+            <!-- <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;" class="logo logo-display"> -->
+            <img src="images/IBM_ICE.jpg" style="width: 215px !important;" class="logo logo-scrolled" alt="Logo">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-menu">
-          <ul class="nav navbar-nav navbar-right" data-in="fadeInDown">
+          <ul class="nav navbar-nav navbar-right">
             <!-- <li><button class="navback"><a href="index.html">Home</a></button></li> -->
             <li><a href="index.html">Home</a></li>
             <!-- <li class="dropdown">
@@ -125,7 +119,7 @@
             <li><a href="certificate.html">IBM Global Certificatation Program</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specializations</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" style="width: 0px !important;">
                 <li><a href="aiml.html">Artificial Intelligence</a></li>
                 <li><a href="blockchain.html">Blockchain</a></li>
                 <li><a href="BA.html">Business Analytics</a></li>
@@ -134,9 +128,16 @@
                 <li><a href="iot.html">Internet of Things</a></li>
               </ul>
             </li>
-            <li><a href="http://13.233.225.233">Registration</a></li>
+            <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration</a>
+                    <ul class="dropdown-menu" style="width: 0px !important;">
+                        <li><a href="http://13.233.225.233">New Registration</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </li>
+            <!-- <li><a href="http://13.233.225.233">Registration</a></li> -->
             <li><a href="contact.html">Help Desk</a></li>
-            <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li>
+            <!-- <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li> -->
           </ul>
         </div>
       </div>
@@ -162,7 +163,7 @@
                   <div class="form-group">
                     <input type="text" class="form-control" name="fname" placeholder="Name">
                     <input type="date" class="form-control" name="date" placeholder="Date of birth">
-                    <input type="number" class="form-control" name="contact" placeholder="Contact number">
+                    <input type="email" class="form-control" name="email" placeholder="Email ID">
                     <!-- <input type="text" class="form-control" name="course" placeholder="Course name"> -->
                     <button class="btn btn-primary">Register Now!!</button>
                   </div>
@@ -184,7 +185,7 @@
                   <div class="form-group">
                     <input type="text" class="form-control" name="fname" placeholder="Name">
                     <input type="date" class="form-control" name="date" placeholder="Date of birth">
-                    <input type="number" class="form-control" name="contact" placeholder="Contact number">
+                    <input type="email" class="form-control" name="email" placeholder="Email ID">
                     <!-- <input type="text" class="form-control" name="course" placeholder="Course name"> -->
                     <button class="btn btn-primary">Register Now!!</button>
                   </div>
@@ -206,7 +207,7 @@
                     <div class="form-group">
                       <input type="text" class="form-control" name="fname" placeholder="Name">
                       <input type="date" class="form-control" name="date" placeholder="Date of birth">
-                      <input type="number" class="form-control" name="contact" placeholder="Contact number">
+                      <input type="email" class="form-control" name="email" placeholder="Email ID">
                       <!-- <input type="text" class="form-control" name="course" placeholder="Course name"> -->
                       <button class="btn btn-primary">Register Now!!</button>
                     </div>
@@ -303,7 +304,7 @@
 
   <section class="displaynone" id="responsivedown">
     <form>
-      <div class="containerpad">
+      <div class="containerhome">
         <div class="row">
           <div class="col-md-12 formback">
             <h3 class="heading bottom20" style="color: black;">Register Here<span class="divider-center"></span>
@@ -311,7 +312,7 @@
             <div class="form-group">
               <input type="text" class="form-control" name="fname" placeholder="Name">
               <input type="date" class="form-control" name="date" placeholder="Date of birth">
-              <input type="number" class="form-control" name="contact" placeholder="Contact number">
+              <input type="email" class="form-control" name="email" placeholder="Email ID">
               <button class="btn btn-primary">Register Now!!</button>
             </div>
           </div>
@@ -324,18 +325,17 @@
     <!--ABout US-->
     <section id="ibm">
       <!-- <a href="javascript:void(0);" class="close-button"></a> -->
-      <div class="containerpad">
+      <div class="containerhome">
         <div class="row">
           <div class="col-md-6">
-            <div class="wrap">
+            <!-- <iframe src="https://www.youtube.com/watch?v=NKspbO80vFI"></iframe> -->
+            <!-- <video> -->
+              <iframe src="https://www.youtube.com/embed/NKspbO80vFI" width="100%" height="350"></iframe>
+            <!-- </video> -->
+            <!-- <div class="wrap">
               <iframe width="100%" autoplay="true" height="350"
                 src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-              <!-- <button type="button" onclick="closevideo()">&times;</button> -->
-              <!-- <iframe width="100%" height="315" src="video/Block_chain.mp4"></iframe> -->
-              <!-- <h1>Blockchain</h1> -->
-              <!-- <iframe src="https://player.vimeo.com/video/55806355" width="100%" height="360" frameborder="0"
-    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-            </div>
+            </div> -->
           </div>
           <div class="col-md-6">
             <h2 class="heading">News and Events<span class="divider-left"></span></h2>
@@ -368,7 +368,7 @@
     <!--ABout US-->
 
     <section class="secgrey" style="padding-bottom: 0px;">
-      <div class="containerpad">
+      <div class="containerhome">
         <h2 class="heading bottom25">About IBM<span class="divider-left"></span></h2>
         <div class="row">
           <div class="col-md-12 bottom15">
@@ -469,8 +469,8 @@
   </section> -->
 
     <section class="" style="padding-bottom: 0px;">
-      <div class="containerpad">
-        <h2 class="heading bottom25">About Additional Skill Acquisition Program<span class="divider-left"></span></h2>
+      <div class="containerhome">
+        <h2 class="heading bottom25">About ASAP Kerala<span class="divider-left"></span></h2>
         <div class="row">
           <div class="col-md-12 bottom15">
             <div class="item active">
@@ -559,7 +559,7 @@
 
     <!--collaboration-->
     <section id="coll">
-      <div class="containerpad">
+      <div class="containerhome">
         <div class="row">
           <div class="col-md-6 priorty">
             <h2 class="heading bottom25">IBM and ASAP Collaboration – CSP Kalamassery<span class="divider-left"></span>
@@ -586,18 +586,6 @@
             <img class="img-responsive" src="images/kerala_uni3.jpeg">
           </div>
         </div>
-        <!-- <div class="row">     
-        <div class="col-md-12">   
-       <p class="text-justify">This is a new vision which
-          is based on cutting-edge, industry-aligned courses, delivered through a new-age paradigm of delivery through
-          an ecosystem of the platform, methodology, and mechanisms. IBM would be delivering in two quadrants. The
-          quadrants selected are ICT (Industry Collaboration Training) and Precision Training quadrants. IBM has
-          identified technology areas such as Data Science, Business Analytics, Internet of Things (IOT), Cyber
-          Security, Blockchain and Artificial Intelligence & Machine Learning (AI/ML) which provide large employment
-          opportunities in the area.
-        </p>
-        </div>
-      </div> -->
       </div>
     </section>
 
@@ -862,12 +850,6 @@
                     <img src="images/knowbots_logo.png" alt="Knowbots" class="logo">
                   </a>
                 </div>
-                <!-- <div class="col-md-6" style="text-align: center;">
-                              <a href="http://www.phemesoft.com/" target="_blank" data-placement="bottom"
-                                  title="Click to login">
-                                  <img src="images/CATIA-logo.png" alt="CATIA" class="logo ">
-                              </a>
-                          </div> -->
               </div>
             </div>
             <div class="modal-footer">
@@ -1001,7 +983,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <!--<p>Copyright &copy; 2019 <a href="#.">CSP</a>. all rights reserved.</p>-->
             <p>All rights reserved &copy; IBM India</p>
           </div>
         </div>
@@ -1050,77 +1031,65 @@
       }
     });
 
-    // navbar icon
-    document.getElementById("mySidenav").addEventListener("mouseover", openNav);
-    document.getElementById("mySidenav").addEventListener("mouseout", closeNav);
-    function openNav() {
-      document.getElementById("mySidenav").style.display = "block";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.display = "none";
-    }
-
-    //     function openNav() {
-    //   document.getElementById("mySidenav").style.width = "250px";
-    //   document.getElementById("main").style.marginLeft = "250px";
-    //   // document.getElementById("contain").style.width ="970px";
+    // // navbar icon
+    // document.getElementById("mySidenav").addEventListener("mouseover", openNav);
+    // document.getElementById("mySidenav").addEventListener("mouseout", closeNav);
+    // function openNav() {
+    //   document.getElementById("mySidenav").style.display = "block";
     // }
 
     // function closeNav() {
-    //   document.getElementById("mySidenav").style.width = "0";
-    //   // document.getElementById("contain").style.width ="1170px";
-    //   document.getElementById("main").style.marginLeft= "0";
+    //   document.getElementById("mySidenav").style.display = "none";
     // }
 
-    //  dropdown
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
+    // //  dropdown
+    // var dropdown = document.getElementsByClassName("dropdown-btn");
+    // var i;
 
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
+    // for (i = 0; i < dropdown.length; i++) {
+    //   dropdown[i].addEventListener("click", function () {
+    //     this.classList.toggle("active");
+    //     var dropdownContent = this.nextElementSibling;
+    //     if (dropdownContent.style.display === "block") {
+    //       dropdownContent.style.display = "none";
+    //     } else {
+    //       dropdownContent.style.display = "block";
+    //     }
+    //   });
+    // }
 
     // video
 
-    /*Floating Code for Iframe Start*/
-    // if (jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"],iframe[src*="https://player.vimeo.com/"]').length > 0) {
-      /*Wrap (all code inside div) all vedio code inside div*/
-      // jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').wrap("<div class='iframe-parent-class'></div>");
-      /*main code of each (particular) vedio*/
-      jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').each(function (index) {
+    // /*Floating Code for Iframe Start*/
+    // // if (jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"],iframe[src*="https://player.vimeo.com/"]').length > 0) {
+    //   /*Wrap (all code inside div) all vedio code inside div*/
+    //   // jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').wrap("<div class='iframe-parent-class'></div>");
+    //   /*main code of each (particular) vedio*/
+    //   jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').each(function (index) {
 
-        /*Floating js Start*/
-        var windows = jQuery(window);
-        var iframeWrap = jQuery(this).parent();
-        var iframe = jQuery(this);
-        var iframeHeight = iframe.outerHeight();
-        var iframeElement = iframe.get(0);
-        windows.on('scroll', function () {
-          var windowScrollTop = windows.scrollTop();
-          var iframeBottom = iframeHeight + iframeWrap.offset().top;
-          //alert(iframeBottom);
+    //     /*Floating js Start*/
+    //     var windows = jQuery(window);
+    //     var iframeWrap = jQuery(this).parent();
+    //     var iframe = jQuery(this);
+    //     var iframeHeight = iframe.outerHeight();
+    //     var iframeElement = iframe.get(0);
+    //     windows.on('scroll', function () {
+    //       var windowScrollTop = windows.scrollTop();
+    //       var iframeBottom = iframeHeight + iframeWrap.offset().top;
+    //       //alert(iframeBottom);
 
-          if ((windowScrollTop > iframeBottom)) {
-            iframeWrap.height(iframeHeight);
-            iframe.addClass('stuck');
-            jQuery(".scrolldown").css({ "display": "none" });
-          } else {
-            iframeWrap.height('auto');
-            iframe.removeClass('stuck');
-          }
-        });
-        /*Floating js End*/
-      });
-    // }
+    //       if ((windowScrollTop > iframeBottom)) {
+    //         iframeWrap.height(iframeHeight);
+    //         iframe.addClass('stuck');
+    //         jQuery(".scrolldown").css({ "display": "none" });
+    //       } else {
+    //         iframeWrap.height('auto');
+    //         iframe.removeClass('stuck');
+    //       }
+    //     });
+    //     /*Floating js End*/
+    //   });
+    // // }
 
   </script>
 

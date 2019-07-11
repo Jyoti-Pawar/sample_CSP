@@ -41,17 +41,17 @@
 
     <!--Header-->
     <header>
-        <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
+        <nav class="navbar navbar-default navbar-fixed bootsnav">
             <!-- <div class="container"> -->
             <div class="header">
                 <div class="navbar-header">
-                    <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
-                    </button> -->
+                    </button>
                     <a class="navbar-brand" href="#">
-                        <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;"
-                            class="logo logo-display">
-                        <img src="images/IBM_ICE.jpg" style="width: 180px !important;" class="logo logo-scrolled"
+                        <!-- <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;"
+                            class="logo logo-display"> -->
+                        <img src="images/IBM_ICE.jpg" style="width: 215px !important;" class="logo logo-scrolled"
                             alt="Logo">
                     </a>
                 </div>
@@ -62,7 +62,7 @@
                         <li><a href="certificate.html">IBM Global Certification Program</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specializations</a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" style="width: 0px !important;">
                                 <li><a href="aiml.html">Artificial Intelligence</a></li>
                                 <li><a href="blockchain.html">Blockchain</a></li>
                                 <li><a href="BA.html">Business Analytics</a></li>
@@ -71,17 +71,24 @@
                                 <li><a href="iot.html">Internet of Things</a></li>
                             </ul>
                         </li>
-                        <li><a href="http://13.233.225.233">Registration</a></li>
+                        <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration</a>
+                                <ul class="dropdown-menu" style="width: 0px !important;">
+                                    <li><a href="http://13.233.225.233">New Registration</a></li>
+                                    <li><a href="">Login</a></li>
+                                </ul>
+                            </li>
+                        <!-- <li><a href="http://13.233.225.233">Registration</a></li> -->
                         <li><a href="contact.html">Help Desk</a></li>
-                        <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li>
+                        <!-- <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li> -->
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="navbar-fixed-top main-menu-continer menutop">
+        <!-- <div class="navbar-fixed-top main-menu-continer menutop">
             <button type="button" class="btn menubar-toggle styl " onmouseover="openNav()">
-                <!-- <i class="fa fa-bars"></i> -->Menu
+                Menu
             </button>
 
             <div id="mySidenav" class="sidenav displaynone">
@@ -91,10 +98,6 @@
                         <a href="index.html"><img src="images/sidebar/home.ico"
                                 style="height:30px!important;padding-right: inherit;" />Home</a></li>
                     <hr>
-                    <!-- <li>
-                            <a href="index1.html"><img src="images/sidebar/home.ico"
-                                    style="height:30px!important;padding-right: inherit;" />Home2</a></li>
-                        <hr> -->
                     <li>
                         <a href="certificate.html"><img src="images/sidebar/certificate.ico"
                                 style="height:30px!important;padding-right: inherit;" />IBM Global Certification
@@ -135,7 +138,7 @@
                     <hr>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </header>
 
     <!--Slider-->
@@ -370,65 +373,33 @@
         //     gridheight: [480, 600, 500, 390],
         // });
 
-        // navbar icon
-        document.getElementById("mySidenav").onmouseover = function () { openNav() };
-        document.getElementById("mySidenav").onmouseout = function () { closeNav() };
-        function openNav() {
-            document.getElementById("mySidenav").style.display = "block";
-        }
+        // // navbar icon
+        // document.getElementById("mySidenav").onmouseover = function () { openNav() };
+        // document.getElementById("mySidenav").onmouseout = function () { closeNav() };
+        // function openNav() {
+        //     document.getElementById("mySidenav").style.display = "block";
+        // }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.display = "none";
-        }
+        // function closeNav() {
+        //     document.getElementById("mySidenav").style.display = "none";
+        // }
 
-        //  dropdown
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
+        // //  dropdown
+        // var dropdown = document.getElementsByClassName("dropdown-btn");
+        // var i;
 
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-
-        // video
-
-        /*Floating Code for Iframe Start*/
-        if (jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"],iframe[src*="https://player.vimeo.com/"]').length > 0) {
-            /*Wrap (all code inside div) all vedio code inside div*/
-            jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').wrap("<div class='iframe-parent-class'></div>");
-            /*main code of each (particular) vedio*/
-            jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').each(function (index) {
-
-                /*Floating js Start*/
-                var windows = jQuery(window);
-                var iframeWrap = jQuery(this).parent();
-                var iframe = jQuery(this);
-                var iframeHeight = iframe.outerHeight();
-                var iframeElement = iframe.get(0);
-                windows.on('scroll', function () {
-                    var windowScrollTop = windows.scrollTop();
-                    var iframeBottom = iframeHeight + iframeWrap.offset().top;
-                    //alert(iframeBottom);
-
-                    if ((windowScrollTop > iframeBottom)) {
-                        iframeWrap.height(iframeHeight);
-                        iframe.addClass('stuck');
-                        jQuery(".scrolldown").css({ "display": "none" });
-                    } else {
-                        iframeWrap.height('auto');
-                        iframe.removeClass('stuck');
-                    }
-                });
-                /*Floating js End*/
-            });
-        }
+        // for (i = 0; i < dropdown.length; i++) {
+        //     dropdown[i].addEventListener("click", function () {
+        //         this.classList.toggle("active");
+        //         var dropdownContent = this.nextElementSibling;
+        //         if (dropdownContent.style.display === "block") {
+        //             dropdownContent.style.display = "none";
+        //         } else {
+        //             dropdownContent.style.display = "block";
+        //         }
+        //     });
+        // }
+       
     </script>
 
 </body>

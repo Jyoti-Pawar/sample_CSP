@@ -41,17 +41,17 @@
 
     <!--Header-->
     <header>
-        <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
+        <nav class="navbar navbar-default navbar-fixed bootsnav">
             <!-- <div class="container"> -->
             <div class="header">
                 <div class="navbar-header">
-                    <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                                <i class="fa fa-bars"></i>
-                              </button> -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
                     <a class="navbar-brand" href="#">
-                        <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;"
-                            class="logo logo-display">
-                        <img src="images/IBM_ICE.jpg" style="width: 180px !important;" class="logo logo-scrolled"
+                        <!-- <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;"
+                            class="logo logo-display"> -->
+                        <img src="images/IBM_ICE.jpg" style="width: 215px !important;" class="logo logo-scrolled"
                             alt="Logo">
                     </a>
                 </div>
@@ -62,7 +62,7 @@
                         <li><a href="certificate.html">IBM Global Certification Program</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specializations</a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" style="width: 0px !important;">
                                 <li><a href="aiml.html">Artificial Intelligence</a></li>
                                 <li><a href="blockchain.html">Blockchain</a></li>
                                 <li><a href="BA.html">Business Analytics</a></li>
@@ -71,17 +71,24 @@
                                 <li><a href="iot.html">Internet of Things</a></li>
                             </ul>
                         </li>
-                        <li><a href="http://13.233.225.233">Registration</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration</a>
+                            <ul class="dropdown-menu" style="width: 0px !important;">
+                                <li><a href="http://13.233.225.233">New Registration</a></li>
+                                <li><a href="">Login</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="http://13.233.225.233">Registration</a></li> -->
                         <li><a href="contact.html">Help Desk</a></li>
-                        <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li>
+                        <!-- <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li> -->
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="navbar-fixed-top main-menu-continer menutop">
+        <!-- <div class="navbar-fixed-top main-menu-continer menutop">
             <button type="button" class="btn menubar-toggle styl" onmouseover="openNav()">
-                <!-- <i class="fa fa-bars"></i> -->Menu
+               Menu
             </button>
 
             <div id="mySidenav" class="sidenav displaynone">
@@ -91,10 +98,6 @@
                         <a href="index.html"><img src="images/sidebar/home.ico"
                                 style="height:30px!important;padding-right: inherit;" />Home</a></li>
                     <hr>
-                    <!-- <li>
-                            <a href="index1.html"><img src="images/sidebar/home.ico"
-                                    style="height:30px!important;padding-right: inherit;" />Home2</a></li>
-                        <hr> -->
                     <li>
                         <a href="certificate.html"><img src="images/sidebar/certificate.ico"
                                 style="height:30px!important;padding-right: inherit;" />IBM Global Certification
@@ -135,7 +138,7 @@
                     <hr>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </header>
 
     <!--Slider-->
@@ -264,7 +267,7 @@
         <div class="row">
             <div class="col-md-6">
                 <!-- <center> -->
-                <div class="topM" style="padding: 22px;">
+                <div style="padding: 22px;">
                     <center>
                         <h3 class="heading bottom25">Global Skill Gap<span class="divider-left"></span></h3>
                     </center>
@@ -294,47 +297,129 @@
                 <img class="img-responsive" src="images/AIML/jobs.jpg" alt="skils" style="width: 745px;">
             </div>
             <div class="col-md-6">
-                <div style="margin-top: 80px;">
+                <div class="top25">
                     <center>
                         <h3 class="heading bottom25">Job Roles<span class="divider-left"></span></h3>
                     </center>
                     <div class="col-md-6">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>AI/ML
+                                engineers</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Product
+                                manager</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>AI/ML
+                                developer</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Machine
+                                learning developer</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>AI/ML
+                                architect</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Product
+                                engineer</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Data analyst
+                            </li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Front-end
+                                developer</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Researcher
+                            </li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Software
+                                architect</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>AI/ML lead
+                            </li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Data
+                                warehouse engineer</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+                    <div class="col-md-4">
                         <div class="lightgreen">
                             <center>
-                                <h4 style="color: white;">AI/ML engineers</h4>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>AI/ML engineers</h4>
                             </center>
                         </div><br>
                         <div class="darkgreen">
                             <center>
-                                <h4 style="color: white;">AI/ML architect</h4>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>Product manager</h4>
                             </center>
                         </div> <br>
 
                         <div class="blue">
                             <center>
-                                <h4 style="color: white;">AI/ML developer</h4>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>AI/ML developer</h4>
+                            </center>
+                        </div><br>
+                        <div class="green">
+                            <center>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>Machine learning developer </h4>
                             </center>
                         </div><br>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="lightgreen">
                             <center>
-                                <h4 style="color: white;">Researcher</h4>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>AI/ML architect </h4>
                             </center>
                         </div><br>
                         <div class="darkgreen">
                             <center>
-                                <h4 style="color: white;">Product engineer</h4>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>Product engineer </h4>
+                            </center>
+                        </div> <br>
+
+                        <div class="blue">
+                            <center>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>Data analyst</h4>
+                            </center>
+                        </div><br>
+
+                        <div class="green">
+                            <center>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>Front-end developer </h4>
+                            </center>
+                        </div><br>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="lightgreen">
+                            <center>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>Researcher</h4>
+                            </center>
+                        </div><br>
+                        <div class="darkgreen">
+                            <center>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>Software architect</h4>
                             </center>
                         </div><br>
                         <div class="blue">
                             <center>
-                                <h4 style="color: white;">AI/ML lead</h4>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>AI/ML lead</h4>
                             </center>
-                        </div>
+                        </div><br>
+
+                        <div class="green">
+                            <center>
+                                <h4 style="color: white;"><i class="fa fa-check-circle-o" aria-hidden="true"
+                                        style="padding-right: 10px;"></i>Data warehouse engineer </h4>
+                            </center>
+                        </div><br>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -343,6 +428,26 @@
     <section class="">
         <div class="row">
             <div class="col-md-6">
+                <div class="top25">
+                <div class="col-sm-6">
+                        <h3 class="heading bottom25">Academic Qualification<span class="divider-left"></span></h3>
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Graduates and
+                            pursuing students (CS/ IS)</li>
+                        <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>BTech – 3rd and
+                            4th year</li>
+                        <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>MTech/MCA/MSc –
+                            1st and 2nd year</li>
+                        <li class="text-justify"><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Professionals
+                            with minimum 2 years experience in IT with at least one programming skill</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="heading bottom25">Skill Pre-requisites<span class="divider-left"></span></h3>
+                </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-6">
                 <div class="topM">
                     <center>
                         <h3 class="heading bottom25">Pre-requisites<span class="divider-left"></span></h3>
@@ -368,7 +473,7 @@
                     </div>
                     <div class="col-md-3"></div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="col-md-6">
                 <img class="img-responsive" src="images/AIML/skills.jpg" alt="skils" style="width: 745px;">
@@ -381,15 +486,18 @@
         <div class="containerpad">
             <div class="row">
                 <div class="col-md-6">
-                    <img class="img-responsive" alt="overview" src="images/AIML/AIMLoverview.PNG">
+                    <center>
+                    <img class="img-responsive" alt="overview" src="images/AIML/AIMLoverview.PNG" style="width: 530px;">
+                    </center>
                 </div>
                 <div class="col-md-6">
                     <!-- <h2 class="heading bottom25">Artificial Intelligence/Machine Learning Overview<span
                             class="divider-left"></span></h2> -->
-                    <p class="half_space text-justify top30">This specialization helps to gain knowledge on how
+                    <p class="half_space text-justify">This specialization helps to gain knowledge on how
                         artificial intelligence makes it possible for machines to learn from experience, adjust to new
                         inputs and perform human-like tasks. The audience will learn about the technologies like machine
-                        learning, deep learning and natural language processing. It also provides an overview of how
+                        learning, deep learning and natural language processing.</p>
+                        <p class="text-justify">It also provides an overview of how
                         these technologies are used for training the systems to accomplish the specific tasks by
                         processing large amounts of data and recognizing patterns in the data.
                     </p>
@@ -490,13 +598,17 @@
                                 specialization,
                                 the audience will: </b></p>
                         <ul>
-                            <li class="liback1">Gain knowledge on major concepts of machine
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Gain
+                                knowledge on major concepts of machine
                                 learning, deep learning and performance metrics</li>
-                            <li class="liback2">Understand the machine learning algorithms and
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Understand
+                                the machine learning algorithms and
                                 techniques to develop an industry driven application</li>
-                            <li class="liback2">Learn about the applications of machine learning to
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Learn about
+                                the applications of machine learning to
                                 address a real-world problem in several industries</li>
-                            <li class="liback1">Get digital badge as AI/ML professional</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="padding-right: 10px;"></i>Get digital
+                                badge as AI/ML professional</li>
                         </ul>
                     </div>
                     <center>
@@ -607,65 +719,32 @@
         //     gridheight: [480, 600, 500, 390],
         // });
 
-        // navbar icon
-        document.getElementById("mySidenav").onmouseover = function () { openNav() };
-        document.getElementById("mySidenav").onmouseout = function () { closeNav() };
-        function openNav() {
-            document.getElementById("mySidenav").style.display = "block";
-        }
+        // // navbar icon
+        // document.getElementById("mySidenav").onmouseover = function () { openNav() };
+        // document.getElementById("mySidenav").onmouseout = function () { closeNav() };
+        // function openNav() {
+        //     document.getElementById("mySidenav").style.display = "block";
+        // }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.display = "none";
-        }
+        // function closeNav() {
+        //     document.getElementById("mySidenav").style.display = "none";
+        // }
 
-        //  dropdown
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
+        // //  dropdown
+        // var dropdown = document.getElementsByClassName("dropdown-btn");
+        // var i;
 
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-
-        // video
-
-        /*Floating Code for Iframe Start*/
-        if (jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"],iframe[src*="https://player.vimeo.com/"]').length > 0) {
-            /*Wrap (all code inside div) all vedio code inside div*/
-            jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').wrap("<div class='iframe-parent-class'></div>");
-            /*main code of each (particular) vedio*/
-            jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').each(function (index) {
-
-                /*Floating js Start*/
-                var windows = jQuery(window);
-                var iframeWrap = jQuery(this).parent();
-                var iframe = jQuery(this);
-                var iframeHeight = iframe.outerHeight();
-                var iframeElement = iframe.get(0);
-                windows.on('scroll', function () {
-                    var windowScrollTop = windows.scrollTop();
-                    var iframeBottom = iframeHeight + iframeWrap.offset().top;
-                    //alert(iframeBottom);
-
-                    if ((windowScrollTop > iframeBottom)) {
-                        iframeWrap.height(iframeHeight);
-                        iframe.addClass('stuck');
-                        jQuery(".scrolldown").css({ "display": "none" });
-                    } else {
-                        iframeWrap.height('auto');
-                        iframe.removeClass('stuck');
-                    }
-                });
-                /*Floating js End*/
-            });
-        }
+        // for (i = 0; i < dropdown.length; i++) {
+        //     dropdown[i].addEventListener("click", function () {
+        //         this.classList.toggle("active");
+        //         var dropdownContent = this.nextElementSibling;
+        //         if (dropdownContent.style.display === "block") {
+        //             dropdownContent.style.display = "none";
+        //         } else {
+        //             dropdownContent.style.display = "block";
+        //         }
+        //     });
+        // }
     </script>
 
 </body>
