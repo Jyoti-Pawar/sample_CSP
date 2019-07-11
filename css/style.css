@@ -1931,3 +1931,27 @@ p.scrolldown {
 	opacity: 0.8;padding: 20px;
 	border-radius: 10px;
 }
+
+ul{
+	color: #5b5b5b;
+}
+/* .icons{
+	padding-right: 10px;
+	color: #0070c0;
+} */
+.tickmark li:before {
+content: "\f00c";
+    font-family: FontAwesome;
+    padding: 0px;
+    color: #306fbe;
+    float: left;
+    position: absolute;
+    left: 0px;
+    font-size: 14px;
+    padding: 0px 15px;
+	font-weight: 100;
+	text-align: justify;
+}
+.tickmark li{
+	padding-left: 20px;
+}
