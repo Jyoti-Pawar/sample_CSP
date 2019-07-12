@@ -1956,3 +1956,9 @@ content: "\f00c";
 .tickmark li{
 	padding-left: 20px;
 }
+.batch{
+	margin-right: 50px;
+    /* color: white; */
+    font-weight: 700;
+    font-size: 20px;
+}
