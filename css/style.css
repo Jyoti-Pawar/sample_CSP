@@ -1156,7 +1156,7 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 
 /*carousel*/
 .carouselW{
-	width:45%;
+	width:100%;
 }
 @media screen and (max-width:320px){
 	.carouselW{
