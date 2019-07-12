@@ -1962,3 +1962,11 @@ content: "\f00c";
     font-weight: 700;
     font-size: 20px;
 }
+.backbtn{
+	position: absolute;
+    top: 320px;
+    transform-origin: top right;
+	padding: 4px 50px;
+	color: white;
+	cursor: pointer;
+}
