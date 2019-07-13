@@ -1995,3 +1995,6 @@ content: "\f00c";
 50%{opacity: .5;}
 100%{opacity: 1;}
 }
+#down a:hover{
+	color:#5b5b5b;
+}
