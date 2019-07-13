@@ -588,9 +588,10 @@ nav.navbar.bootsnav ul.nav > li{
 }
 nav.navbar.bootsnav ul.nav > li > a{
   color: #0f0f0f;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 18px;
   font-weight:600;
-  text-transform:uppercase;
+  /* text-transform:uppercase; */
   position:relative;
   overflow:hidden;
   /* font-family: 'Source Sans Pro'; */
