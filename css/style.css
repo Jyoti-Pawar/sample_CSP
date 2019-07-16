@@ -570,7 +570,7 @@ nav.navbar.bootsnav .navbar-brand{
   height: auto;
   margin-left: 0;
   padding: 0px 0px !important;
-  /* padding: 8px 0px !important; */
+  padding: 8px 5px !important;
   /* padding:20px  0; */
 }
 nav.navbar.bootsnav .navbar-brand, nav.navbar.bootsnav.navbar-fixed.no-background .navbar-brand{
@@ -903,6 +903,12 @@ nav.navbar.bootsnav.no-full .navbar-collapse.in {
   background:transparent;
   padding:0 4px;
 }
+#maphome{
+	display: block;
+  width: 100%;
+  height:250px;
+  border-top-right-radius: 20px;
+}
 
 
 /* --------------- FOOTER ---------------*/
@@ -980,7 +986,7 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 }
 @media screen and (max-width:992px){
 	body{
-		font-size:90%;
+		/* font-size:90%; */
 	}
 	nav.navbar.bootsnav .navbar-toggle{
 	  float: right;
@@ -1140,7 +1146,7 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 
 @media screen and (max-width:479px){
 	body{
-		font-size:80%;
+		/* font-size:80%; */
 	}  
 	.apply_coupon .coupon.text-right{ text-align:left;}
 	.apply_coupon .coupon .btn_common { margin-bottom:15px;}
@@ -1971,6 +1977,13 @@ content: "\f00c";
 }
 .tickmark li{
 	padding-left: 20px;
+	margin-bottom: 4px;
+}
+#down{
+	color: #037b96;
+}
+#down a:hover{
+	color: #ffb600;
 }
 .batch{
 	margin-right: 50px;
@@ -2005,32 +2018,22 @@ content: "\f00c";
 100%{opacity: 1;}
 }
 
-/* container new */
-/* .container{
-	width: 1400px;
+/* gallery */
+.gal{
+	position: absolute;
+	/* top: 32%; */
+	bottom: 0px;
+    /* left: 34%; */
+    font-size: 25px;
 }
-@media screen and (min-width:320px){
-	.container{
-		width: 700px !important;
-	}
+.galsty{
+	color: #fff;
+	background: rgba(135, 129, 129, 0.55);
+    /* text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; */
 }
-@media screen and (max-width:1441px){
-	.container{
-		width: 1325px !important;
-	}
-} */
-/* @media (min-width: 1200px){
-.container {
-    width: 1400px !important;
-}
-} */
-/* @media (min-width: 992px){
-.container {
-    width: 970px !important;
-}
-}
-@media (min-width: 768px){
-.container {
-    width: 750px !important;
-}
-} */
+.marquee {
+	width: 300px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background: #ccc;
+  }
