@@ -32,8 +32,8 @@
   </style>
 </head>
 
-<!-- <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false"> -->
-  <body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  <!-- <body> -->
   <!-- <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a> -->
   <!--Loader-->
   <div class="loader">
@@ -100,7 +100,7 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
             <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand">
             <!-- <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;" class="logo logo-display"> -->
             <img src="images/IBM_ICE.jpg" style="width: 250px !important;" class="logo logo-scrolled" alt="Logo">
           </a>
@@ -108,7 +108,7 @@
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-right" style="margin-top: 20px;">
             <!-- <li><button class="navback"><a href="index.html">Home</a></button></li> -->
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
@@ -120,7 +120,7 @@
             <li><a href="certificate.html">IBM Global Certificatation Program</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specializations</a>
-              <ul class="dropdown-menu" style="width: 0px !important;">
+              <ul class="dropdown-menu">
                 <li><a href="aiml.html">Artificial Intelligence/ Machine Learning</a></li>
                 <li><a href="blockchain.html">Blockchain</a></li>
                 <li><a href="BA.html">Business Analytics</a></li>
@@ -131,8 +131,8 @@
             </li>
             <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration</a>
-                    <ul class="dropdown-menu" style="width: 0px !important;">
-                        <li><a href="http://reg.icecsp.com/">New Registration</a></li>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://reg.icecsp.com/signup.php">New Registration</a></li>
                         <li><a href="http://learn.knowbots.phemesoft.com/" target="_blank">Login</a></li>
                     </ul>
                 </li>
@@ -334,42 +334,48 @@
                 <div class="carousel-inner">
                   <div class="item active">
                       <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h2 class="gal galsty" style="left: 38%;">AI/ML</h2>
+                        <!-- <h2 class="gal galsty" style="left: 38%;">Artificial Intelligence</h2> -->
+                        <h2 class="gal galsty">Artificial Intelligence</h2>
                         <img src="images/AI&ML.jpg" class="img-responsive" alt="AIML">
                       </div>
                   </div>                 
   
                   <div class="item">
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h2 class="gal galsty" style="left:28%;">Blockchain</h2>
+                        <!-- <h2 class="gal galsty" style="left:28%;">Blockchain</h2> -->
+                        <h2 class="gal galsty">Blockchain</h2>
                       <img src="images/blockchain.jpg" class="img-responsive" alt="BA">
                       </div>
                   </div>
   
                   <div class="item">
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h2 class="gal galsty" style="left: 8%;">Business Analytics</h2>
+                        <!-- <h2 class="gal galsty" style="left: 8%;">Business Analytics</h2> -->
+                        <h2 class="gal galsty">Business Analytics</h2>
                       <img src="images/BusinessAnalytics.jpg" class="img-responsive" alt="DS">
                      </div>
                   </div> 
 
                   <div class="item">
                       <div class="col-md-4 col-sm-6 col-xs-12">
-                          <h2 class="gal galsty" style="left: 20%;">Cyber Security</h2>
+                          <!-- <h2 class="gal galsty" style="left: 20%;">Cyber Security</h2> -->
+                          <h2 class="gal galsty">Cyber Security</h2>
                         <img src="images/cyber_security.jpg" class="img-responsive" alt="DS">
                        </div>
                     </div> 
                     
                     <div class="item">
                         <div class="col-md-4 col-sm-6 col-xs-12">
-                            <h2 class="gal galsty" style="left: 23%;">Data Science</h2>
+                            <!-- <h2 class="gal galsty" style="left: 23%;">Data Science</h2> -->
+                            <h2 class="gal galsty">Data Science</h2>
                           <img src="images/datascience.jpg" class="img-responsive" alt="DS">
                          </div>
                       </div> 
 
                       <div class="item">
                           <div class="col-md-4 col-sm-6 col-xs-12">
-                              <h2 class="gal galsty" style="left: 45%;">IoT</h2>
+                              <!-- <h2 class="gal galsty" style="left: 20%;">Internet of Things </h2> -->
+                              <h2 class="gal galsty">Internet of Things</h2>
                             <img src="images/IOT.jpg" class="img-responsive" alt="DS">
                            </div>
                         </div>  
@@ -379,7 +385,7 @@
           <div class="col-md-5" style="padding-right: 40px;">
             <h2 class="heading bottom25">News and Events<span class="divider-left"></span></h2>
             <div style="overflow: auto;height: 170px;">
-              <marquee direction="up" scrolldelay="50" onmouseover="this.stop();" onmouseout="this.start();" style="line-height: 2;">
+              <marquee direction="up" scrolldelay="" onmouseover="this.stop();" onmouseout="this.start();" style="line-height: 2;">
                   IBM ICE Batch-one starts on 1-9-2019<br>
                   IBM ICE Batch-one starts on 1-9-2019<br>
                   IBM ICE Batch-one starts on 1-9-2019<br>
@@ -406,7 +412,7 @@
             <h2 class="heading bottom25">IBM and ASAP Kerala Collaboration<span class="divider-left"></span>
             </h2>
             <ul class="text-justify tickmark">
-              <li style="margin-bottom: 6px;">ASAP has identified the need to tie up with a well-recognized
+              <li style="margin-bottom: 6px;">Additional Skill Acquisition Program (ASAP) has identified the need to tie up with a well-recognized
                 organization, whose skill development methodologies, tools and capabilities are proven, whose
                 certification is globally recognized.
               </li>
@@ -423,7 +429,7 @@
                 than their peers.</li>
             </ul>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6"><br><br>
             <!-- <img class="img-responsive" src="images/kerala_uni3.jpeg"> -->
             <div class="col-sm-6 topM">
               <img class="img-responsive" src="images/csp_logo.png" alt="csp logo" width="220">
@@ -447,7 +453,7 @@
                 <center> <img class="img-responsive imgW" src="images/banner/overall-globally.png"
                     alt="overall-globally"></center>
                 <ul class="tickmark">
-                  <li class="text-justify" style="margin-bottom: 6px;">74+ years of experience in the field of
+                  <li class="text-justify" style="margin-bottom: 6px;">75+ years of experience in the field of
                     education, one of the most
                     respected
                     and recognized company globally.</li>
@@ -480,10 +486,8 @@
                 <center> <img class="img-responsive imgW" src="images/banner/overall-training.png"
                     alt="overall-training"></center>
                 <ul class="tickmark">
-                  <li class="text-justify" style="margin-bottom: 6px;">One of the Top 10 training organization in the
-                    world which provides
-                    the best
-                    possible solution for training the young engineers.</li>
+                  <li class="text-justify" style="margin-bottom: 6px;">One of the top 10 training organization in the
+                    world which provides the best possible solution for training the youths.</li>
                   <li class="text-justify">Focuses on skilling the individual.</li>
                 </ul>
               </div>
@@ -497,7 +501,7 @@
                   <li class="text-justify" style="margin-bottom: 6px;">Helps the research community to focus on
                     innovation by providing the
                     appropriate computing environment, technology solutions and support.</li>
-                  <li class="text-justify">IBM Redbooks are most knowledgeable source for the entire world.
+                  <li class="text-justify">IBM Redbooks are the most knowledgeable source for the entire world.
                   </li>
                 </ul>
               </div>
@@ -541,12 +545,12 @@
       <div class="containerpad">
         <h2 class="heading bottom25">About ASAP Kerala<span class="divider-left"></span></h2>
         <div class="row">
-          <div class="col-md-12 bottom15">
+          <div class="col-md-12">
             <div class="item active">
               <div class="col-md-3 col-sm-6 col-xs-12 vl">
                 <center> <img class="img-responsive imgW" src="images/banner/started.png" alt="started"></center>
                 <ul class="tickmark text-justify">
-                  <li>Incorporated in the year 2012 through State Skill Development Project with the
+                  <li>ASAP was incorporated in the year 2012 through State Skill Development Project with the
                     aim of ‘empowering’ the youth of Kerala.</li>
                 </ul>
               </div>
@@ -972,7 +976,7 @@
     <!-- <button class="open-button"><a class="content" href="http://localhost/csp/register.php">Click to Register</a></button> -->
     <button class="top-right" style="top: 500px;">
       <!-- <a href="#top">Register here</a> -->
-      <a href="http://reg.icecsp.com/">Register here</a>
+      <a href="http://reg.icecsp.com/signup.php">Register here</a>
     </button>
     <!-- </div> -->
   </div>
